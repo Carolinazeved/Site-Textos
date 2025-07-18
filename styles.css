@@ -1,0 +1,145 @@
+   body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('background.jpg'); /* Imagem de fundo */
+      background-size: cover;       /* Ajusta a imagem para cobrir toda a tela */
+      background-position: center;  /* Centraliza a imagem */
+      background-repeat: no-repeat; /* Evita repetição */
+      height: 100vh;                /* Altura total da tela */
+      color: white;                 /* Cor do texto por cima da imagem */
+      text-shadow: 1px 1px 3px #000; /* Dá contraste no texto */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+   header {
+    position: fixed;              /* Fixa o header no topo */
+    top: 0;                       /* Encosta no topo */
+    left: 0;
+    width: 100%;                  /* Ocupa toda a largura da tela */
+    background-color: rgba(0, 165, 137, 0.9); /* Cor com leve transparência */
+    backdrop-filter: blur(4px);   /* Desfoque do fundo */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #000;
+    z-index: 1000;                /* Garante que fique por cima dos outros elementos */
+}
+
+a {
+text-decoration: none;
+color: white;
+}
+
+.botoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.botao {
+  background-color: #00a589;
+  color: white;
+  text-decoration: none;
+  width: 130px;
+  height: 160px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-align: center;
+  padding: 10px;
+}
+
+.botao:hover {
+  background-color: #007e69;
+  transform: scale(1.05);
+}
+
+.botao img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.botao span {
+  margin-top: 5px;
+  display: block;
+}
+
+
+ footer {
+    position: fixed;              /* Fixa o footer no rodapé */
+    bottom: 0;                    /* Encosta no rodapé */
+    left: 0;
+    width: 100%;                  /* Ocupa toda a largura da tela */
+    background-color: rgba(1, 124, 104, 0.9); /* Cor com leve transparência */
+    backdrop-filter: blur(4px);   /* Desfoque do fundo */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px #000;
+    z-index: 1000;                /* Garante que fique por cima dos outros elementos */
+}
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+    justify-content: flex-start;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  header, footer {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .botoes {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .botao {
+    width: 90%;
+    max-width: 280px;
+    height: auto;
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .botao img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 8px;
+  }
+
+  .botao span {
+    font-size: 14px;
+  }
+
+  .cartao {
+    width: 95%;
+    padding: 20px;
+    margin: 100px auto 80px;
+  }
+
+  .cartao p {
+    font-size: 18px;
+  }
+}
