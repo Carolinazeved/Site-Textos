@@ -110,22 +110,26 @@ color: white;
   }
 
   .botoes {
-    flex-direction: column;
-    gap: 20px;
-    padding: 10px;
+   justify-content: center;
+    gap: 15px;
+    padding: 10px 10px;
   }
 
   .botao {
-    width: 90%;
+    width: 120px;
     max-width: 280px;
-    height: auto;
-    padding: 15px;
+    height: 120px;
+    padding: 10px;
     font-size: 16px;
   }
 
+   main {
+    margin-top: 200px;
+  }
+
   .botao img {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     margin-bottom: 8px;
   }
 
